@@ -17,6 +17,7 @@ services:
     image: postgres:15-alpine
     environment:
       POSTGRES_USER: "${DB_USER}"
+      PGUSER: "${DB_USER}"
       POSTGRES_PASSWORD: "${DB_PASSWORD}"
     ports:
       - "${DB_PORT}:5432"
