@@ -9,4 +9,5 @@ make
 
 # FAQ
 **PostGres isn't working after reinitialization or after running make init**
+
 For whatever reason if you need a new postgres volume (ex. deleted .env file or recreation of new one). Delete the docker volume and run make again.
